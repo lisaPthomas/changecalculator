@@ -1,0 +1,38 @@
+#whole {
+	background-color: none;
+	text-align: center;
+	padding: 10px;
+}
+
+#customer {
+	padding-top: 20px;
+}
+
+#button {
+	margin-top: 20px;
+}
+/*#dollarstext
+	{
+		font-family: 'Orbitron', sans-serif;
+		font-size: 3em;
+
+	}*/
+
+.inputLabel {
+	font-family:'Orbitron', sans-serif;
+
+}
+#change {
+	font-family:'Orbitron', sans-serif;
+}
+
+#header {
+	font-family:'Orbitron', sans-serif;
+	font-size: 4em;
+	text-shadow: 20;
+}
+
+.allCoins  {
+	font-family:'Orbitron', sans-serif;
+	font-size: 1em;
+}
