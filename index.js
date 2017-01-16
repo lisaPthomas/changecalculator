@@ -1,8 +1,6 @@
-console.log('kjh')
 
 
-
-
+//onclick event
 function calculate() {
     //variables from user inputs and price difference
     var price = document.getElementById("salePrice").value;
@@ -18,55 +16,35 @@ function calculate() {
     //how to get the coin amount
     var coinValue = (difference - totalDollars).toFixed(2);
     console.log(coinValue)
-    // document.getElementById("coinTotal").innerHTML = coinValue;
+        // document.getElementById("coinTotal").innerHTML = coinValue;
 
     //change value of coins to whole number
     var wholeNumberCoins = coinValue * 100;
-    console.log(wholeNumberCoins)
-    
-    //total quarters output
+
+    //quarters output
     var remainder1 = wholeNumberCoins % 25;
-
     var quarterAmount = wholeNumberCoins - remainder1;
-
     var quarterTotal = quarterAmount / 25;
-	document.getElementById("quarters").innerHTML = quarterTotal;
+    document.getElementById("quarters").innerHTML = quarterTotal;
 
-	//dimes output
-	var remainder2 = remainder1 % 10;
-	console.log(remainder2);
-	var dimeAmount = remainder1 - remainder2;
-	var dimeTotal = dimeAmount /10;
-	document.getElementById("dimes").innerHTML = dimeTotal;
+    //dimes output
+    var remainder2 = remainder1 % 10;
+    var dimeAmount = remainder1 - remainder2;
+    var dimeTotal = dimeAmount / 10;
+    document.getElementById("dimes").innerHTML = dimeTotal;
 
-	//nickel output
-	var remainder3 = remainder2 % 5;
-	var nickelAmount = remainder2 - remainder3;
-	var nickelTotal = nickelAmount/5;
-	document.getElementById("nickels").innerHTML = nickelTotal;
+    //nickel output
+    var remainder3 = remainder2 % 5;
+    var nickelAmount = remainder2 - remainder3;
+    var nickelTotal = nickelAmount / 5;
+    document.getElementById("nickels").innerHTML = nickelTotal;
 
-	//penny output
-	var remainder4 = remainder3 % 1;
-	var pennyAmount = remainder3-remainder4;
-	var pennyTotal = pennyAmount/1;
-	document.getElementById("pennies").innerHTML = pennyTotal;
-
-
-
-
-
+    //penny output
+    var remainder4 = remainder3 % 1;
+    var pennyAmount = remainder3 - remainder4;
+    var pennyTotal = pennyAmount / 1;
+    document.getElementById("pennies").innerHTML = pennyTotal;
 
 }
 
 
-
-
-
-
-
-
-
-
-
-
-//    // <p id="change"> </p>
